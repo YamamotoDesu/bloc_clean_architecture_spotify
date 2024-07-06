@@ -1,4 +1,5 @@
 import 'package:bloc_clean_architecture_spotify/core/cofigs/theme/app_theme.dart';
+import 'package:bloc_clean_architecture_spotify/presentation/pages/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
-      home: Container(),
+      debugShowCheckedModeBanner: false,
+      home: const SplashPage(),
     );
   }
 }
